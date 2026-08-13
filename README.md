@@ -185,7 +185,19 @@ Mengambil simulasi yang sudah disimpan berdasarkan ID:
 curl -X GET http://localhost:8080/api/loans/1
 ```
 
-### 2. Pengujian Unit Test (Go & Node.js)
+### 2. Pengujian API via Postman Collection
+
+Tersedia berkas Postman Collection yang sudah dikonfigurasi di root project:
+*   Berkas: [mini-paylater.postman_collection.json](file:///Users/iyamif/Documents/GitHub/mini-paylater/mini-paylater.postman_collection.json)
+*   Variabel `base_url` diatur secara default ke `http://localhost:8080`.
+
+**Cara Impor ke Postman:**
+1. Buka aplikasi Postman.
+2. Klik tombol **Import** di pojok kiri atas.
+3. Seret dan lepas berkas `mini-paylater.postman_collection.json` ke area impor.
+4. Anda siap menguji endpoint Health Check, Create Loan, dan Get Loan Detail secara interaktif.
+
+### 3. Pengujian Unit Test (Go & Node.js)
 *   **Backend Go**:
     Untuk menjalankan pengujian unit test pada backend Go (jika berkas test ditambahkan di masa mendatang):
     ```bash
@@ -199,7 +211,7 @@ curl -X GET http://localhost:8080/api/loans/1
     npm run lint
     ```
 
-### 3. Pengujian UI Frontend (E2E Manual)
+### 4. Pengujian UI Frontend (E2E Manual)
 1. Buka browser Anda dan arahkan ke `http://localhost:3000`.
 2. Di halaman utama, Anda akan disuguhkan **Form Simulasi Pinjaman**.
 3. Isi kolom yang disediakan:
