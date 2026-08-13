@@ -9,6 +9,14 @@ Proyek ini dibangun menggunakan arsitektur **Monorepo** dengan pemisahan yang je
 
 ---
 
+## 📸 Screenshots
+
+| Halaman Simulasi / Input | Dashboard Hasil Simulasi |
+| :---: | :---: |
+| ![Form Simulasi](./docs/screenshots/landing-page.png) | ![Hasil Simulasi](./docs/screenshots/result-dashboard.png) |
+
+---
+
 ## 🛠️ Tech Stack & Prerequisites
 
 Sebelum memulai, pastikan Anda telah menginstal tools berikut di sistem lokal Anda:
