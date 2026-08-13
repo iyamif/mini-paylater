@@ -39,7 +39,10 @@ func ConnectDatabase() *gorm.DB {
 	)
 
 	db, err := gorm.Open(
-		postgres.Open(dsn),
+		postgres.New(postgres.Config{
+			DSN:                  dsn,
+			PreferSimpleProtocol: true, // Needed for transaction poolers like PgBouncer / Supabase pooler
+		}),
 		&gorm.Config{
 			PrepareStmt: false,
 		},
