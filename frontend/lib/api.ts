@@ -1,5 +1,13 @@
+const isProduction =
+    typeof window !== "undefined"
+        ? window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1"
+        : process.env.NODE_ENV === "production";
+
 const API_URL =
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
+    process.env.NEXT_PUBLIC_API_URL ||
+    (isProduction
+        ? "https://mini-paylater-api.onrender.com"
+        : "http://localhost:8080");
 
 export interface CreateLoanRequest {
     customer_name: string;
