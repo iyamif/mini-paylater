@@ -55,8 +55,8 @@ func main() {
 
 	// 6. Mengonfigurasi Middleware CORS (Cross-Origin Resource Sharing) agar frontend Next.js dapat mengakses API
 	router.Use(cors.New(cors.Config{
-		AllowOrigins: []string{
-			"http://localhost:3000", // Mengizinkan request dari server dev Next.js (port 3000)
+		AllowOriginFunc: func(origin string) bool {
+			return true // Mengizinkan semua origin (localhost, vercel domains, dll.)
 		},
 		AllowMethods: []string{
 			"GET",
