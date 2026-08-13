@@ -2,6 +2,8 @@
 
 Aplikasi web simulasi kredit instan (PayLater) yang memungkinkan pengguna untuk mensimulasikan pinjaman, menghitung bunga, dan melihat jadwal cicilan bulanan beserta tanggal jatuh temponya secara transparan.
 
+🔗 **Live Demo**: [https://mini-paylater.vercel.app](https://mini-paylater.vercel.app)
+
 Proyek ini dibangun menggunakan arsitektur **Monorepo** dengan pemisahan yang jelas antara backend dan frontend:
 *   **Backend**: Go (Gin Gonic & GORM)
 *   **Frontend**: Next.js (TypeScript & Tailwind CSS)
