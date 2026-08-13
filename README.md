@@ -9,11 +9,21 @@ Proyek ini dibangun menggunakan arsitektur **Monorepo** dengan pemisahan yang je
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots & Responsive Layout
 
-| Halaman Simulasi / Input | Dashboard Hasil Simulasi |
+Aplikasi ini dirancang dengan antarmuka yang sepenuhnya **responsif** (*mobile-friendly*) sehingga dapat menyesuaikan tata letak dengan sempurna baik di layar Desktop maupun Mobile (HP).
+
+### 🖥️ Tampilan Desktop
+| Halaman Utama & Form Input | Dashboard Hasil Simulasi & Jadwal |
 | :---: | :---: |
-| ![Form Simulasi](./docs/screenshots/landing-page.png) | ![Hasil Simulasi](./docs/screenshots/result-dashboard.png) |
+| ![Form Simulasi Desktop](./docs/screenshots/landing-page.png) | ![Hasil Simulasi Desktop](./docs/screenshots/result-dashboard.png) |
+
+### 📱 Tampilan Mobile (Responsif)
+*Layout otomatis disesuaikan secara dinamis agar pengguna HP dapat bertransaksi dengan nyaman.*
+
+| 1. Beranda Mobile | 2. Form Input Mobile | 3. Hasil Simulasi Mobile |
+| :---: | :---: | :---: |
+| ![Beranda Mobile](./docs/screenshots/mobile-landing.png) | ![Form Mobile](./docs/screenshots/mobile-form.png) | ![Hasil Mobile](./docs/screenshots/mobile-result.png) |
 
 ---
 
